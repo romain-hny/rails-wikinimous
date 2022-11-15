@@ -1,0 +1,8 @@
+<h1><%= @article.title %></h1> <%# ajouter des link to edit et destroy avec icons%>
+<p>
+  <%= @article.content %>
+</p>
+
+<%= link_to "Edit article", edit_article_path(@article.id) %><br>
+<%= link_to "Create article", new_article_path %><br>
+<%= link_to "Home page", articles_path %>
